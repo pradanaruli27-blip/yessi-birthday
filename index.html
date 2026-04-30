@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Untuk Yessi ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  text-align: center;
+  color: white;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  background: white;
+  color: #ff5e78;
+  font-size: 18px;
+}
+
+img {
+  width: 200px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+  <h1>Happy Birthday Yessi 🎉</h1>
+  <p id="text"></p>
+
+  <button onclick="show()">Klik aku sayang 💖</button>
+
+  <div id="more" style="display:none;">
+    <p>Aku sayang kamu ❤️</p>
+  </div>
+</div>
+
+<script>
+let msg = "Hari ini spesial... karena kamu lahir ❤️";
+let i = 0;
+
+function type(){
+  if(i < msg.length){
+    document.getElementById("text").innerHTML += msg.charAt(i);
+    i++;
+    setTimeout(type, 50);
+  }
+}
+type();
+
+function show(){
+  document.getElementById("more").style.display = "block";
+}
+</script>
+
+</body>
+</html>
